@@ -1,69 +1,91 @@
 # Omni Biz Sales Analysis Project
-Welcome to the Omni Biz Sales Analysis Project! This repository contains all the necessary resources and code for analyzing and visualizing sales data for Omni Biz, a leading online retail platform. This project showcases data cleaning, SQL queries, and insightful visualizations to provide a comprehensive overview of Omni Biz's sales performance.
+Welcome to the Omni Biz Sales Analysis Project! This repository contains all the necessary resources and code for analyzing and visualizing sales data for Omni Biz, a leading online retail platform. This project showcases data cleaning, SQL queries, and insightful visualizations to provide a comprehensive overview of Omni Biz's sales performance. View more details [here](https://github.com/Sammylayo/Omni-Biz-Data-Analysis/blob/main/Omniretail%20Data%20Analyst%20Assessment.pdf).
 
 ## Table of Contents
 1. [Project Overview](#introduction)
-2. Data Source
-3. Data Cleaning
-4. SQL Analysis
-5. Visualization
-6. Results and Insights
-7. Usage
-8. Contributing
-9. License
-10. Contact
+2. [Data Source](#a)
+3. [Data Cleaning](#b)
+4. [SQL Analysis](#c)
+5. [Visualization](#d)
+6. [Results and Insights](#e)
+7. [Usage](#f)
+8. [Contributing](#g)
+9. [License](#h)
+10. [Contact](#i)
     
 ## Project Overview <a name="introduction"></a>
 
 Omni Biz has experienced significant growth over the past year, with diverse product offerings and impressive sales figures. This project aims to analyze and visualize sales data to uncover insights about sales performance, customer behavior, and regional trends.
 
-Data Source
-The data used in this project is derived from the Omni Biz sales database, which includes tables such as Sales, Employee, and Category. The data covers various aspects of the business, including sales channels, product categories, and customer information.
-
-Data Cleaning
+## Data Source<a name="a"></a>
+The data used in this project is derived from the Omni Biz sales database, which includes tables such as Sales, Employee, and Category. The data covers various aspects of the business, including sales channels, product categories, and customer information. You can view the dataset  [here](https://github.com/Sammylayo/Omni-Biz-Data-Analysis/blob/main/Dataset-For-Assessment.xlsx).
+## Data Cleaning <a name="b"></a>
 Data cleaning is a crucial step to ensure the accuracy and reliability of the analysis. The steps taken include:
 
-Removing Unwanted Characters: Titles and special characters are removed from customer names.
-Normalizing Names: Customer names are standardized to ensure consistency.
-Removing Extra Spaces: Any extra whitespace in the data is eliminated.
-Removing Numbers: Numbers are removed from customer names to maintain clarity.
-Checking for Duplicates: Duplicates in the sales records are identified and handled appropriately.
-SQL Analysis
+- Removing Unwanted Characters: Titles and special characters are removed from customer names.
+- Normalizing Names: Customer names are standardized to ensure consistency.
+- Removing Extra Spaces: Any extra whitespace in the data is eliminated.
+- Removing Numbers: Numbers are removed from customer names to maintain clarity.
+- Checking for Duplicates: Duplicates in the sales records are identified and handled appropriately.
+
+## SQL Analysis <a name="c"></a>
 Several SQL queries were crafted to extract valuable insights from the sales data:
 
-Total Sales and Quantity by Category: Calculate the total sales amount and quantity sold for each product category, along with the corresponding sales employee's information and commission earned.
-Top 3 Employees: Identify the top 3 employees based on the total sales amount, including their commission percentage.
-Top 5 Customers: Find the top 5 customers based on total spending and the number of orders placed.
-Sales Distribution by Source: Analyze the distribution of sales orders across different sources and calculate the percentage contribution of each source.
-Visualization
+- Total Sales and Quantity by Category: Calculate the total sales amount and quantity sold for each product category, along with the corresponding sales employee's information and commission earned.
+- Top 3 Employees: Identify the top 3 employees based on the total sales amount, including their commission percentage.
+- Top 5 Customers: Find the top 5 customers based on total spending and the number of orders placed.
+- Sales Distribution by Source: Analyze the distribution of sales orders across different sources and calculate the percentage contribution of each source.
+
+## Visualization<a name="d"></a>
 Visualization tools are employed to provide a clear and interactive representation of the sales data. Key visualizations include:
 
 Sales Over Time: Trend analysis of total sales amount over time.
-Top Product Categories: Highlighting the highest-selling product categories.
-Order Source Trends: Identifying patterns in sales data by order source or delivery mode.
-Top-Spending Customers: Profiling the top-spending customers and their purchasing behavior.
-Regional Revenue Distribution: Visualizing the revenue generated by different product categories across regions.
-Employee Commission Analysis: Analyzing the average commission earned by each employee.
-Results and Insights
+- Top Product Categories: Highlighting the highest-selling product categories.
+- Order Source Trends: Identifying patterns in sales data by order source or delivery mode.
+- Top-Spending Customers: Profiling the top-spending customers and their purchasing behavior.
+- Regional Revenue Distribution: Visualizing the revenue generated by different product categories across regions.
+- Employee Commission Analysis: Analyzing the average commission earned by each employee.
+
+You can view the Visualization [here](https://github.com/Sammylayo/Omni-Biz-Data-Analysis/blob/main/Omni%20Biz.pdf)
+
+## Results and Insights<a name="e"></a>
 The analysis revealed several key insights:
 
-The website is the dominant sales channel, contributing significantly to the total revenue.
-Lagos is the top-performing region, with "Pay on Receive" being the most preferred payment method.
-Home Appliances and Mobile categories drive the highest sales.
-Doorstep Delivery is the most popular delivery method.
-Identifying top customers and employees helps in strategizing future sales efforts.
-Usage
+### Sales Channels
+- Website: 70.79% of revenue ($314.93 million). The website is the dominant sales channel.
+- Android: 15.55% ($69.18 million). Significant contributions from Android users.
+- Social Media: 10.42% ($46.37 million). Social media channels played a notable role.
+- iOS: 3.16% ($14.05 million). iOS had the smallest share but still contributed.
+### Growth
+- Steady month-by-month growth. Sales figures consistently increased over time.
+- The website consistently leads, reflecting strong market penetration and user preference.
+### Regional Insights
+- Lagos: Top revenue region, generating substantial income for Omni Biz.
+- Payment Preferences: Pay on Receive favored, indicating customer trust in this method across multiple regions.
+### Delivery Preferences
+- Doorstep Delivery: Preferred by 83.63% of orders. Convenience and immediate access are key factors for customers.
+### Product Popularity
+- Top Categories: Home Appliances and Mobile. These categories drove the highest sales figures, showing strong customer demand.
+### Key Customers
+- Top Spenders: Johnny Home, Adeleke Daniel, Giwa Afeez, Morakinyo Ebunoluwa. These loyal customers brought in substantial revenue and placed many orders.
+### Strategic Insights
+- Website and Pay on Receive dominance inform future strategies. These insights guide strategic planning for sales and payment methods.
+- Focus on popular products and customer delivery preferences for growth. Tailoring offerings based on these insights will enhance customer satisfaction and drive further growth.
+
+
+## Usage<a name="f"></a>
 To run the analysis and visualizations:
 
-Clone the repository: git clone https://github.com/yourusername/omni-biz-sales-analysis.git
-Import the dataset into your database.
-Run the SQL scripts in the sql directory for data cleaning and analysis.
-Use your preferred visualization tool (e.g., Tableau, Power BI) to create the visualizations using the cleaned data.
-Contributing
+- Clone the repository: git clone https://github.com/Sammylayo/omni-biz-sales-analysis.git
+- Import the dataset into your database.
+- Run the SQL scripts in the sql directory for data cleaning and analysis.
+- Use your preferred visualization tool (e.g., Tableau, Power BI) to create the visualizations using the cleaned data.
+
+## Contributing<a name="g"></a>
 Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
 
-License
+## License<a name="h"></a>
 This project is licensed under the MIT License.
 
-Contact
-For any questions or inquiries, please contact me at [your email address].
+## Contact<a name="i"></a>
+For any questions or inquiries, please contact me at [sammy22layo@gmail.com].
